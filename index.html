@@ -2,38 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  
+    <title>More Flexbox</title>
     <style>
-      body {
-        font-family: 'Merriweather', serif;
-        background-color: lightgoldenrodyellow;
-      }
-      .error_wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-      }
-      .error_wrapper > .error_heading {
-        margin-bottom: 42px;
-      }
-      img {
-        width: 50%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="error_wrapper">
-      <div class="error_heading">
-        <h2>Yikes... Who knows when that page will be available, would you like to try another?</h2>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          margin: 0;
+          height: calc(100vh - 20px);
+          width: calc(100vw - 20px);
+          border: 10px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .container > .img_blocks {
+          display: flex;
+          flex-direction: column;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="img_blocks">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+        </div>
       </div>
-  
-      <img src="images/tbot.png" alt="tbot">
-    </div>
-  </body>
-  </html>
+    </body>
+    </html>
